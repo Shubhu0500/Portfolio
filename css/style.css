@@ -1,0 +1,399 @@
+@import 'utilities.css';
+:root {
+  --primary: #1a3d63;
+  --dark: #ff6f20;
+  --pure: #5d4037;
+  --ternary: #778899;
+  --light: #f1f1f1;
+  --secondary: #ffb347;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 4000px;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+
+  margin: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+}
+header {
+  background: var(--primary);
+  height: 750px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 90%, 0 100%);
+}
+.container {
+  max-width: 1152px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header nav .left a {
+  color: var(--dark);
+  text-decoration: none;
+  margin-right: 2rem;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+header nav .left a:hover {
+  color: var(--secondary);
+}
+
+header nav {
+  padding: 2rem 0;
+}
+header nav .branding {
+  margin-right: 3rem;
+}
+.hero {
+  padding: 2rem 0;
+}
+.hero .right {
+  color: var(--dark);
+}
+.hero .right h6 {
+  color: var(--pure);
+  font-size: 2rem;
+}
+.hero .right h1 {
+  font-size: 3.5rem;
+  font-weight: 120;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+.hero .right h1 span {
+  color: var(--pure);
+}
+.hero .right p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+.hero .right {
+  margin-top: -7rem;
+}
+section {
+  padding: 6rem 0;
+}
+section.about .about-me-img {
+  width: 100px; /* Set the width */
+  height: 100px; /* Set the height */
+  border-radius: 60%; /* Make it circular */
+  overflow: hidden; /* Hide overflow for a clean circle */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a nice effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%; /*Ensure the image fills the container */
+  height: 85%;
+}
+section.about h1 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+section.about h1 span {
+  color: var(--dark);
+}
+section.about h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+section.about p {
+  font-family: 'Lato', sans-serif;
+  color: var(--ternary);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+section.about .social {
+  display: flex;
+}
+section.about .social a {
+  background: var(--transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 0.3rem;
+  transition: all 0.3s ease;
+}
+section.about .social a:hover {
+  background: var(--dark);
+}
+section.about .social a img {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+}
+.section-heading {
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 0.5;
+}
+.section-heading span {
+  color: var(--dark);
+}
+.section-heading + p {
+  color: var(--ternary);
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 8rem;
+  text-align: center;
+}
+section.skills {
+  background-color: var(--light);
+}
+section.skills .card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 6rem;
+  text-align: center;
+}
+section.skills .card-wrapper .card {
+  background-color: var(--secondary);
+  padding: 3rem 2rem;
+  position: relative;
+  padding-top: 5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+section.skills .card-wrapper .card img {
+  position: absolute;
+  top: -3.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section.skills .card-wrapper .card h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.section.skills .card-wrapper .card p {
+  font-family: 'Lato', sans-serif;
+  color: var(--ternary);
+  line-height: 1.6;
+}
+section.skills .card-wrapper .card:hover {
+  background: var(--primary);
+}
+section.skills .card-wrapper .card:hover h2,
+section.skills .card-wrapper .card:hover p {
+  color: var(--dark);
+}
+section.education .slider .slide img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+section.education .slider .slide {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.6rem;
+}
+section.education .slider .slide p {
+  font-family: 'Lato', sans-serif;
+  color: var(--ternary);
+  margin-bottom: 1rem;
+}
+section.education .slider .slide span {
+  color: var(--dark);
+  font-size: 1rem;
+}
+section.education .slider-dots .dots {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+section.education .slider-dots {
+  margin-top: 3rem;
+}
+section.education .slider-dots button {
+  font-size: 0rem;
+  width: 15px;
+  height: 10px;
+  margin-right: 0.5rem;
+  border: none;
+  outline: none;
+  background: var(--ternary);
+  border-radius: 30%;
+  cursor: pointer;
+}
+section.education .slider-dots button:hover {
+  background: var(--dark);
+}
+
+section.education .dots li.slick-active button {
+  background: var(--dark);
+  width: 25px;
+}
+section.contacts .card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+}
+
+section.contacts .card-wrapper .card {
+  text-align: center;
+}
+section.contacts .card-wrapper .card img {
+  margin-bottom: 3rem;
+}
+section.contacts .card-wrapper .card h1 {
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+section.contacts .card-wrapper .card h6 {
+  font-size: 1rem;
+  color: var(--ternary);
+}
+section.contacts .input-wrap {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+  margin-bottom: 2rem;
+}
+section.contacts .input-wrap-2 {
+  display: flex;
+  flex-direction: column;
+}
+section.contacts .input-wrap-2 input {
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+section.contacts input {
+  padding: 0.5rem;
+  border: 1px solid var(--dark);
+  font-size: 0.9rem;
+}
+section.contacts .input-wrap-2 textarea {
+  padding: 0.5rem;
+  border: 1px solid var(--dark);
+  font-size: 0.9rem;
+}
+section.contacts .input-wrap-2 textarea:focus {
+  outline: none;
+}
+section.contacts input:focus {
+  outline: none;
+}
+section.contacts .button-wrapper {
+  text-align: center;
+  margin-top: 1rem;
+}
+footer {
+  background: var(--primary);
+  text-align: center;
+  padding: 3rem 0;
+}
+footer .footer-logo {
+  margin-bottom: 3rem;
+  width: 150px;
+}
+footer .footer-socials a {
+  margin-right: 1rem;
+}
+section.footer-socials a:hover {
+  background: var(--secondary);
+}
+footer .footer-socials {
+  margin-bottom: 2rem;
+}
+footer .copyright {
+  color: var(--dark);
+}
+@media (max-width: 1024px) {
+  header #main-nav {
+    display: none;
+  }
+}
+.site-main-wrapper {
+  position: relative;
+}
+.hamberger {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  z-index: 11;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.hamberger img {
+  width: 30px;
+}
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  background: var(--dark);
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  padding-top: 5rem;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+}
+
+.open {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+
+.times {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+.times img {
+  width: 20px;
+}
+.mobile-nav ul {
+  list-style-type: none;
+}
+.mobile-nav ul li a {
+  color: var(--light);
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+/* '#circle-image {
+}' */
+
+#circle-image img {
+  width: 100px; /* Set the width */
+  height: 100px; /* Set the height */
+  border-radius: 50%; /* Make it circular */
+  overflow: hidden; /* Hide overflow for a clean circle */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a nice effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%; /*Ensure the image fills the container */
+  height: 70%; /*Ensure the image fills the container
+  object-fit: cover; /* Maintain the image's aspect ratio */
+}

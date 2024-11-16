@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shubham Singh's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="site-main-wrapper">
+      <button class="hamberger">
+        <img src="./Images/hamberger.svg" height="25" />
+      </button>
+
+      <div class="mobile-nav">
+        <button class="times"><img src="./Images/times.svg" alt="" /></button>
+        <ul>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About Me</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+        </ul>
+      </div>
+      <header>
+        <div class="container">
+          <nav id="main-nav" class="flex items-center justify-between">
+            <div class="left flex items-center">
+              <!-- <div class="branding">
+                <img src="./Images/Screenshot (734).png" height="100" />
+              </div> -->
+              <div>
+                <a href="#home">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+              </div>
+            </div>
+            <div class="right">
+              <a href="#contact"
+                ><button class="btn btn-primary">Contact</button></a
+              >
+            </div>
+          </nav>
+          <div class="hero flex items-center justify-between">
+            <div id="circle-image" class="left flex-1 flex justify-center">
+              <img src="./Images/profilePic.jpeg" />
+            </div>
+            <div class="right flex-1">
+              <h6>Shubham Singh</h6>
+              <h1>I'm a Computer Science <span>Engineer</span></h1>
+              <div>
+                <a href="./Images/CV_Shubham.Singh.pdf"
+                  ><button class="btn btn-secondary" download>
+                    DOWNLOAD CV
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="about" id="about">
+        <div class="container flex item-center">
+          <div class="flex-1">
+            <img class="about-me-img" src="./images/PassportShubham.jpeg" />
+          </div>
+          <div class="flex-1">
+            <h1 id="about">About <span>Me</span></h1>
+            <h3>Hello! I'm Shubham Singh.</h3>
+            <p>
+              I have a B.E. in Computer Science Engineering.I have successfully
+              completed college workshops and online courses in HTML(Hyper Text
+              Markup Language), CSS(Cascading Style Sheet), JS(Java Script),
+              React.js, Node.js, Angular, MongoDB and many more from Udemy. I
+              have utilised the skills gained from those courses into building
+              projects.
+            </p>
+            <div class="social">
+              <a href="#"><img src="./Images/website.png" height="30" /></a>
+              <a href="https://www.facebook.com/profile.php?id=100012883357077"
+                ><img src="./Images/facebook-5222.png" height="30"
+              /></a>
+              <a href="https://twitter.com/Shubham05112000"
+                ><img src="./Images/twitter.png" height="30"
+              /></a>
+              <a href="https://www.linkedin.com/in/shubham-singh-0500"
+                ><img src="./Images/linkedin.png" height="30"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="skills">
+        <div class="container">
+          <h1 class="section-heading" id="skills" style="margin-top: 20px">
+            <span>My </span>Skills
+          </h1>
+          <p>These are some of the Skills I excel at.</p>
+          <div class="card-wrapper">
+            <div class="card">
+              <img src="./Images/icons8-web-development-64.png" />
+              <h1>Web <span>Development</span></h1>
+              <p>
+                I'm familiar with creating websites on HTML, CSS & JS. I have
+                hands on experience with React.js and MYSQL for Web Development,
+                also I am familiar with connecting a front end to back end.I
+                have completed a course related to IBM Full stack JavaScript,
+                which ended with overall understanding on JS in both front and
+                Back end.
+              </p>
+            </div>
+            <div class="card">
+              <img src="./Images/icons8-c++-96.png" />
+              <h1>C/C++</h1>
+              <p>
+                I'm familiar with skills of C and C++ programming. I'm also
+                learning Java programming for better understanding of
+                programming languages.
+              </p>
+            </div>
+            <div class="card">
+              <img src="./Images/icons8-graphic-designer-64.png" />
+              <h1>Graphics <span>Designer (Blender)</span></h1>
+              <p>
+                I have created many environment virtual images. <i></i> have
+                completed a course on Blender on Udemy, where I learned to make
+                virtual environment using Blender application.
+              </p>
+            </div>
+            <div class="card">
+              <img src="./Images/icons8-python-64.png" />
+              <h1>Python</h1>
+              <p>
+                I'm familiar with Python. I use Spyder as my main IDE and
+                Jupyter notebook when working on projects including ML, AI,
+                DS,etc.I have completed an IBM Data Science course, that ended
+                with a great project on House sales, Weather forecast and
+                Flights.
+              </p>
+            </div>
+            <div class="card">
+              <img src="./Images/Cloud.png" height="70" width="70" />
+              <h1>CIS(Cloud Infrastructure Services)</h1>
+              <p>
+                I have hands on experience with Windows administration, Network
+                administration, Citrix Servers, Linux administration, VMware
+                administration as I have been trained on these technologies.
+              </p>
+            </div>
+            <div class="card">
+              <img src="./Images/datascience.png" height="70" width="70" />
+              <h1></h1>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="education" id="education">
+        <div class="container">
+          <h1 class="section-heading"><span>Edu</span>cation</h1>
+          <p>
+            I am available to work for a company having a Technological
+            Background.
+          </p>
+          <div class="slider">
+            <div class="slide">
+              <img src="./Images/WhatsApp Image 2021-08-23 at 21.46.51.jpeg" />
+              <p>
+                I have completed my 10th with a percentage of 89.20%. I was at
+                Holy Cross Convent School for my SSC
+              </p>
+              <span>-Shubham Singh, 10th(SSC)</span>
+            </div>
+            <div class="slide">
+              <img src="./Images/WhatsApp Image 2021-08-23 at 21.46.51.jpeg" />
+              <p>
+                I have completed my 12th with a percentage of 85.23%. I was at
+                Bhavani Shankar College of Science for my HSC.
+              </p>
+              <span>-Shubham Singh, 12th(HSC)</span>
+            </div>
+          </div>
+        </div>
+        <div class="slider-dots"></div>
+      </section>
+      <section class="contacts">
+        <div class="container">
+          <h1 class="section-heading" id="contact"><span>My </span>Contact</h1>
+          <p>
+            These are the ways to reach me. (This will not save any data for now
+            as this is a model to showcase I can use this to store data. It will
+            run when I use the same feature for you!)
+          </p>
+          <div class="card-wrapper">
+            <div class="card">
+              <img src="./Images/istockphoto-1188398258-612x612.jpg" alt="" />
+              <h1>Call me on</h1>
+              <h6>+91 7678051005</h6>
+            </div>
+            <div class="card">
+              <img src="./Images/email.png" alt="" />
+              <h1>Email me at</h1>
+              <h6>shubhu0500@gmail.com</h6>
+            </div>
+          </div>
+          <form action="">
+            <div class="input-wrap">
+              <input type="text" placeholder="Your Name *" />
+              <input type="email" placeholder="Your Email *" />
+            </div>
+            <div class="input-wrap-2">
+              <input type=" text" placeholder="Your Subject... *" />
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Your Message..."
+              ></textarea>
+            </div>
+            <div class="button-wrapper">
+              <button class="btn btn-primary">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <footer>
+        <!-- <a href="#"
+          ><img
+            class="footer-logo"
+            src="./Images/Screenshot (734).png"
+            height="100"
+            alt=""
+        /></a> -->
+        <div class="footer-socials">
+          <a href="#"> <img src="./Images/website.png" height="30" alt="" /></a>
+          <a href="https://www.facebook.com/profile.php?id=100012883357077"
+            ><img src="./Images/facebook-5222.png" height="30" alt=""
+          /></a>
+          <a href="https://twitter.com/Shubham05112000"
+            ><img src="./Images/twitter.png" height="30" alt=""
+          /></a>
+          <a href="https://www.linkedin.com/in/shubham-singh-0500"
+            ><img src="./Images/linkedin.png" height="30" alt=""
+          /></a>
+        </div>
+        <div class="copyright">Copyright 2024 © All Rights Reserved.</div>
+      </footer>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
