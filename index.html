@@ -67,7 +67,7 @@
               <h6>Shubham Singh</h6>
               <h1>I'm a Computer Science <span>Engineer</span></h1>
               <div>
-                <a href="./Images/CV_Shubham.Singh.pdf"
+                <a href="./Images/Shubham_Singh-Resume.pdf"
                   ><button class="btn btn-secondary" download>
                     DOWNLOAD CV
                   </button></a
@@ -108,68 +108,44 @@
           </div>
         </div>
       </section>
-      <section class="skills">
-        <div class="container">
-          <h1 class="section-heading" id="skills" style="margin-top: 20px">
-            <span>My </span>Skills
-          </h1>
-          <p>These are some of the Skills I excel at.</p>
-          <div class="card-wrapper">
-            <div class="card">
-              <img src="./Images/icons8-web-development-64.png" />
-              <h1>Web <span>Development</span></h1>
-              <p>
-                I'm familiar with creating websites on HTML, CSS & JS. I have
-                hands on experience with React.js and MYSQL for Web Development,
-                also I am familiar with connecting a front end to back end.I
-                have completed a course related to IBM Full stack JavaScript,
-                which ended with overall understanding on JS in both front and
-                Back end.
-              </p>
+      <section class="skills" id="skills">
+        <div class="section-heading">
+          <h1 class="section-heading">My <span>Skills</span></h1>
+          <p>Here are some of my technical proficiencies.</p>
+        </div>
+
+        <div class="skill-ring-wrapper">
+          <div class="skill-ring">
+            <div class="circle">
+              <span>90%</span>
             </div>
-            <div class="card">
-              <img src="./Images/icons8-c++-96.png" />
-              <h1>C/C++</h1>
-              <p>
-                I'm familiar with skills of C and C++ programming. I'm also
-                learning Java programming for better understanding of
-                programming languages.
-              </p>
+            <h3>HTML</h3>
+          </div>
+
+          <div class="skill-ring">
+            <div class="circle">
+              <span>85%</span>
             </div>
-            <div class="card">
-              <img src="./Images/icons8-graphic-designer-64.png" />
-              <h1>Graphics <span>Designer (Blender)</span></h1>
-              <p>
-                I have created many environment virtual images. <i></i> have
-                completed a course on Blender on Udemy, where I learned to make
-                virtual environment using Blender application.
-              </p>
+            <h3>CSS</h3>
+          </div>
+
+          <div class="skill-ring">
+            <div class="circle">
+              <span>80%</span>
             </div>
-            <div class="card">
-              <img src="./Images/icons8-python-64.png" />
-              <h1>Python</h1>
-              <p>
-                I'm familiar with Python. I use Spyder as my main IDE and
-                Jupyter notebook when working on projects including ML, AI,
-                DS,etc.I have completed an IBM Data Science course, that ended
-                with a great project on House sales, Weather forecast and
-                Flights.
-              </p>
+            <h3>JavaScript</h3>
+          </div>
+          <div class="skill-ring">
+            <div class="circle">
+              <span>70%</span>
             </div>
-            <div class="card">
-              <img src="./Images/Cloud.png" height="70" width="70" />
-              <h1>CIS(Cloud Infrastructure Services)</h1>
-              <p>
-                I have hands on experience with Windows administration, Network
-                administration, Citrix Servers, Linux administration, VMware
-                administration as I have been trained on these technologies.
-              </p>
+            <h3>FrameWorks(React.js, Node.js, Vue.js)</h3>
+          </div>
+          <div class="skill-ring">
+            <div class="circle">
+              <span>65%</span>
             </div>
-            <div class="card">
-              <img src="./Images/datascience.png" height="70" width="70" />
-              <h1></h1>
-              <p></p>
-            </div>
+            <h3>Databases(SQL,MongoDB)</h3>
           </div>
         </div>
       </section>
@@ -177,25 +153,36 @@
         <div class="container">
           <h1 class="section-heading"><span>Edu</span>cation</h1>
           <p>
-            I am available to work for a company having a Technological
-            Background.
+            I am available to work for your organization within "90"days, as
+            that's the notice period I'll have to serve in my current
+            organization.
           </p>
           <div class="slider">
             <div class="slide">
-              <img src="./Images/WhatsApp Image 2021-08-23 at 21.46.51.jpeg" />
+              <img
+                src="./Images/engineering.gif"
+                alt="Description of GIF"
+                class="gif"
+              />
               <p>
-                I have completed my 10th with a percentage of 89.20%. I was at
-                Holy Cross Convent School for my SSC
+                B.E/ B.Tech in CSE from G.H Raisoni Academy of Engineering and
+                Technology(Nagpur). Participated in various workshops and
+                hackathons to train my brain to "CODE".
               </p>
-              <span>-Shubham Singh, 10th(SSC)</span>
+              <span>GRADE: 8.96 CGPA</span>
             </div>
             <div class="slide">
-              <img src="./Images/WhatsApp Image 2021-08-23 at 21.46.51.jpeg" />
+              <img
+                src="./Images/experiment.gif"
+                alt="Description of GIF"
+                class="gif"
+              />
               <p>
-                I have completed my 12th with a percentage of 85.23%. I was at
-                Bhavani Shankar College of Science for my HSC.
+                HSC (Science) from Bhavani Shankar Junior College of
+                Science(Mumbai). Got through the college with hopes and dreams
+                to become a software engineer, and here we are 😊!
               </p>
-              <span>-Shubham Singh, 12th(HSC)</span>
+              <span>GRADE: 85.27%</span>
             </div>
           </div>
         </div>
@@ -279,5 +266,21 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="./js/app.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const skillRings = document.querySelectorAll('.circle');
+
+        skillRings.forEach((circle) => {
+          const percentage = parseInt(
+            circle.querySelector('span').textContent,
+            10
+          );
+          circle.style.background = `conic-gradient(
+            var(--primary) ${percentage}%, 
+            var(--light) ${percentage}% 100%
+          )`;
+        });
+      });
+    </script>
   </body>
 </html>

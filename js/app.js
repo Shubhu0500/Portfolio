@@ -18,20 +18,37 @@ hamberger.addEventListener('click', function () {
 times.addEventListener('click', function () {
   mobileNav.classList.remove('open');
 });
-// });
-// function openMobileNav() {
-//   mobileNav.style.display = 'block';
-// }
 
-// function closeMobileNav() {
-//   mobileNav.style.display = 'none'; // Hide the mobile navigation
-// }
+document.addEventListener('DOMContentLoaded', () => {
+  const skillRings = document.querySelectorAll('.circle');
 
-// closeButton.addEventListener('click', closeMobileNav);
+  skillRings.forEach((ring) => {
+    const percentage = parseInt(ring.querySelector('span').innerText, 10); // Get percentage from span text
+    let currentPercent = 0; // Start from 0
+    const interval = setInterval(() => {
+      if (currentPercent <= percentage) {
+        ring.style.background = `conic-gradient(
+          var(--primary) ${currentPercent}%,
+          var(--light) ${currentPercent}% 100%
+        )`;
+        currentPercent++;
+      } else {
+        clearInterval(interval); // Stop the animation when it reaches the percentage
+      }
+    }, 10); // Speed of the animation (adjust as needed)
+  });
+});
 
-// // Add event listeners to each link to close the mobile nav when clicked
-// navLinks.forEach((link) => {
-//   link.addEventListener('click', function (event) {
-//     closeMobileNav(); // Close the navigation when a link is clicked
-//   });
-// });
+document.querySelectorAll('.nav-link').forEach((link) => {
+  link.addEventListener('click', () => {
+    document.querySelector('.mobile-nav').classList.remove('open');
+  });
+});
+
+document.querySelector('.times').addEventListener('click', () => {
+  document.querySelector('.mobile-nav').classList.remove('open');
+});
+
+document.querySelector('.hamberger').addEventListener('click', () => {
+  document.querySelector('.mobile-nav').classList.add('open');
+});
